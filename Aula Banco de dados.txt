@@ -1,0 +1,171 @@
+              COMANDOS DLL
+
+show database; ====> Mostra todos os o nomes de bancos de dados feitos .
+show tables ;  ====> Mostra todos os o nomes das tabels feitos em cada banco.
+
+Create database (Inserir algum nome) ; cria uma databese com um nome especifico .
+
+Drop database ( nome); deleta uma database.
+
+Use ( nome da database criada ); usa uma database pelo nome .
+
+exit (nome da database );sai do banco de dados
+
+---------------------------------------------------------------------------
+--criando minha tabela
+CREATE DATABASE Escola;
+---------------------------------------------------------------------------
+--criando a tabela alunos.
+CREATE TABLE alunos(      
+   id INT,
+   nome VARCHAR(255),
+   ra varchar(100),
+   email VARCHAR(255)
+);
+--------------------------------------------------------------------
+--dropando a tabela alunos.
+DROP TABLE alunos;
+--------------------------------------------------------------------
+--Alterando a estrutura de uma tabela.
+Alter Table alunos ADD status BOOLEAN;
+--------------------------------------------------------------------
+exemplo:
+Alter Table alunos ADD (CPF VARCHAR(255),
+Telefone VARCHAR(255));
+---------------------------------------------------------------------
+--Apagando um campo de uma tabela.
+Alter TABLE alunos DROP COLUMN status;
+
+---------------------------------------------------------------------
+--mostra a tabela inteira alunos.
+DESC alunos;
+---------------------------------------------------------------------
+--realizando correcao de dados indevidos.
+exemplo : telefone
+ALTER TABLE alunos RENAME COLUMN tlefone TO Telefone;
+---------------------------------------------------------------------
+--alterando  a tipagem.
+exemplo: de varchar (255) para varchar(20);
+ALTER TABLE alunos MODIFY COLUMN telefone VARCHAR(20);
+---------------------------------------------------------------------
+
+create database empresa;
+
+CREATE TABLE cliente(
+   id INT,
+   nome VARCHAR(255),
+   telefone varchar(100),
+   CPF VARCHAR(255),
+   email VARCHAR(255)
+);
+--------------------------------------------------------------------
+CREATE TABLE produtos(
+   id INT,
+   nome VARCHAR(255),
+   categoria varchar(100),
+   preco Decimal (53,2)  
+);
+--------------------------------------------------------------------
+CREATE TABLE Vendedor(
+   id INT,
+   nome VARCHAR(255),
+   Telefone varchar(100),
+   Data_Nasc INT
+);
+--------------------------------------------------------------------
+CREATE TABLE Motorista(
+   id INT,
+   nome VARCHAR(255),
+   Telefone varchar(100),
+   Data_Nasc INT
+);
+-------------------------------------------------------------------
+CREATE TABLE Transporte(
+   id INT,
+   nome VARCHAR(255),
+   PLACA varchar(10),
+   KM Varchar (255)
+);
+-------------------------------------------------------------------
+CREATE TABLE VENDAS(
+   id_VENDAS INT,
+   Data_da_Venda datetime,
+   id_Cliente INT,
+   id_Produtos INT,
+   Quantidade Decimal,
+   id_Vendedor INT,
+   id_Motorista INT,
+   id_Veiculo INT
+
+);
+-----------------------------------------------------------------------------------
+ALTER TABLE produtos MODIFY COLUMN preco_produto decimal(53,2);
+----------------------------------------------------------------------------------
+ SQL COMANDOS -->Responsavel por manipular as tabelas de um banco de dados
+
+
+	CRUDE de uma tabela
+
+        C = CREATE = CRIAR OU INSERIR
+	R = READER = LEITURA
+	U = UPDATE = ATUALIZAR
+	D = DELETE = DELETAR OU EXCLUIR
+
+	= igual
+	< menor
+	<= menor igual
+	> maior
+	> maior igual
+	<> diferente
+---------------------------------------------------------------------------------------------------------------------------------------
+--COMANDO PARA INSERIR REGISTROS EM UMA TABELA
+
+INSERT INTO >NOME<DA TABELA QUE VAI USAR(ID,NOME,TELEFONE,EMAIL)VALUES(1," FABIANO A M ","46999114954","fabianoam750@gmail.com");
+-----------------------------------------------------------------------------------------------------------------------------------------
+--selecionar a tabela especifica.
+	
+	select*from >nome da tabela;
+---------------------------------------------------------------------------------------------------	
+--deletar algo da tabela.
+
+	DELETE FROM table_name WHERE condition;
+------------------------------------------------------------------------------------------------------
+-- excluindo um registro ultilizando filtragem.
+
+	DELETE FROM cliente WHERE nome = "Fabiano Alves Moreira";
+
+--------------------------------------------------------------------------------------------------
+--atualizar a tabela.
+
+   UPDATE >cliente< SET email ="yyyyyyyyyyyyyyyyyyyyy";
+
+---------------------------------------------------------------------------------------------------
+--atualizar somente um registro da tabela.
+ 
+   UPDATE >cliente< SET email ="fabianoam7500@gmail.com"WHERE nome = "Fabiano ALves Moreira";
+
+---------------------------------------------------------------------------------------------------
+--adicionando obrigatoriedade nos campos.
+
+ALTER TABLE >nome da tabela< MODIFY >nome  de que vai modificar  varchar(255) NOT NULL;
+exemplo: ALTER TABLE cliente MODIFY nome varchar(255),telefone varchar(255),CPF varchar(255) NOT NULL;
+---------------------------------------------------------------------------------------------------------
+-- modificando o campo ID para primary key.
+
+	ALTER TABLE cliente MODIFY id INT NOT NULL PRIMARY KEY;
+--------------------------------------------------------------------------------------------------------
+-- mostra em ordem alfabetica ou numerica.
+  select nome from cliente ORDER BY nome ASC;
+  select nome from cliente ORDER BY nome DESC;
+  select id,nome from cliente ORDER BY id ASC;
+  select id,nome from cliente ORDER BY id DESC;				
+-------------------------------------------------------------------------------------------------------
+configurando git bash
+
+git config --global user.name "Fabiano Alves Moreira"
+git config --global user.email "fabianomoreira7500@gmail.com"
+ 
+git config --list
+git clone https://github.com/FabianoAM2025/TDS_DB.git
+
+
