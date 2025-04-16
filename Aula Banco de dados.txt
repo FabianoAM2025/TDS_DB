@@ -168,4 +168,9 @@ git config --global user.email "fabianomoreira7500@gmail.com"
 git config --list
 git clone https://github.com/FabianoAM2025/TDS_DB.git
 
+------------------------------------------------------------------------------------------
+
+14/04/2025
+
+aula sobre repositórios
 
