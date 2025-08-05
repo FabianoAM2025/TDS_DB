@@ -1,58 +1,210 @@
--- ESTRUTURA DO MEU BANCO DE DADOS MERCADO
 
- + PRODUTOS
-  - ID INT NOT NULL PRIMARY KEY AUTO_INCREMENT
-  - NOME VARCHAR(255) NOT NULL
-  - QUANTIDADE INT NOT NULL DEFAULT(0)
-  - PRECO DECIMAL(9,2) NOT NULL
-  - ATIVO BOOLEAN DEFAULT(TRUE)
+                    -- ESTRUTURA DO MEU BANCO DE DADOS MERCADO
 
- + CLIENTES
-  - ID INT NOT NULL PRIMARY KEY AUTO_INCREMENT
-  - NOME VARCHAR(255) NOT NULL
-  - CPF VARCHAR(255) NOT NULL
-  - TELEFONE VARCHAR(100)
-  - ATIVO BOOLEAN DEFAULT(TRUE)
-
- + PEDIDOS
-  - ID INT NOT NULL PRIMARY KEY AUTO_INCREMENT
-  - ID_CLIENTE INT NOT NULL /* AQUI VAMOS DEFINIR UM FK */
-  - ID_PRODUTO INT NOT NULL /* AQUI TAMBÉM VAMOS DEFIR UMA FK*/
-  - QUANTIDADE INT NOT NULL
-  - TOTAL DECIMAL(9,2) NOT NULL
 
 
   -- COMANDOS
 
-    CREATE DATABASE mercado;                                                CREATE DATABASE estacionamento;
 
-    USE mercado;                                                            USE estacionamento;
+    CREATE DATABASE pedidos;                                          
 
-    CREATE TABLE produtos(                                                 CREATE TABLE clente(
-        id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,                        	cpf  INT NOT NULL PRIMARY KEY,
-        nome VARCHAR(255) NOT NULL,                                             nome VARCHAR(60),
-        quantidade INT NOT NULL,                                                dt_Nasc: DATE);
-        preco DECIMAL(9,2) NOT NULL,                                            
-        ativo BOOLEAN NOT NULL DEFAULT(TRUE)                         CREATE TABLE clente ( cpf INT NOT NULL PRIMARY KEY, nome VARCHAR(60), dt_Nasc: DATE );
-    );
+    USE pedidos;                                                           
 
-    CREATE TABLE clientes(
-        id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
-        nome VARCHAR(255) NOT NULL,
-        cpf VARCHAR(14) NOT NULl,
-        telefone VARCHAR(100),
-        ativo BOOLEAN NOT NULl DEFAULT(TRUE)
-    );
+CREATE TABLE produtos(                                                 
+    id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,                        	
+    nome VARCHAR(255) NOT NULL, 
+    descricao VARCHAR(255),                                           
+    quantidade INT NOT NULL,                                              
+    preco DECIMAL(9,2) NOT NULL,                                            
+    ativo BOOLEAN NOT NULL DEFAULT TRUE                        
+);
 
-    CREATE TABLE pedidos(
-        id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
-        id_cliente INT NOT NULL,
-        id_produto INT NOT NULL,
-        quantidade INT NOT NULL,
-        total DECIMAL(9, 2) NOT NULL,
-        FOREIGN KEY (id_cliente) REFERENCES clientes(id),
-        FOREIGN KEY (id_produto) REFERENCES produtos(id)
-    );
+
+CREATE TABLE clientes(
+    id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+    nome VARCHAR(255) NOT NULL,
+    cpf VARCHAR(14) NOT NULL,
+    email VARCHAR(100),
+    data_de_cadastro DATETIME  
+);
+
+
+CREATE TABLE pedidos(
+    id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+    id_cliente INT NOT NULL,             
+    id_produto INT NOT NULL,            
+    data_pedido DATETIME,                
+    status BOOLEAN NOT NULL DEFAULT TRUE, 
+    FOREIGN KEY (id_cliente) REFERENCES clientes(id),
+    FOREIGN KEY (id_produto) REFERENCES produtos(id)
+);
+
+
+CREATE TABLE itens_pedidos(
+	
+    id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+    id_pedido INT NOT NULL,             
+    id_produto INT NOT NULL, 
+    quantidade INT NOT NULL,
+    preco_unitario DECIMAL(9,2) NOT NULL
+);
+
+CREATE TABLE suporte_tecnico(
+    	
+    id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+    id_cliente INT NOT NULL,
+    descricao_problema VARCHAR(255),
+    data_abertura DATETIME,
+    status VARCHAR(50)
+);
+
+CREATE TABLE avaliacoes(
+    id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+    id_cliente INT NOT NULL,
+    id_produto INT NOT NULL,
+    nota DECIMAL(9,2) NOT NULL,
+    comentarios VARCHAR(255)
+);  
+
+INSERT INTO clientes VALUES
+(1, 'João Silva','1999991111','joao@gmail.com','2024-01-15'),
+(2, 'Maria Souza','21988882222','maria@gmail.com','2024-02-10'),
+(3, 'Carlos Pereira','31977773333','carlos@gmail.com', '2024-03-05'),
+(4, 'Ana Lima','41966664444','ana@gmail.com','2024-04-20'),
+(5, 'Fernanda Rocha','51955555555','fernanda@gmail.com', '2024-05-18');
+
+
+INSERT INTO produtos VALUES
+(1, 'Notebook Lenovo', 'Notebook com 16GB RAM, SSD 512GB', 3500.00, 10),
+(2, 'Mouse Logitech', 'Mouse sem fio USB', 120.00, 50),
+(3, 'Teclado Mecânico', 'Teclado com RGB e switches azuis', 250.00, 30),
+(4, 'Monitor 24"', 'Monitor Full HD 24 polegadas', 800.00, 20),
+(5, 'Headset Gamer', 'Headset com microfone e cancelamento de ruído', 300.00, 15);
+
+
+INSERT INTO pedidos VALUES
+(1, 1, '2024-06-01', 'Enviado'),
+(2, 2, '2024-06-03', 'Entregue'),
+(3, 3, '2024-06-05', 'Processando');
+
+
+INSERT INTO itens_pedido VALUES
+(1, 1, 1, 1, 3500.00),
+(2, 1, 2, 2, 120.00),
+(3, 2, 3, 1, 250.00),
+(4, 2, 4, 1, 800.00),
+(5, 3, 5, 1, 300.00),
+(6, 3, 2, 1, 120.00);
+
+
+INSERT INTO suporte_tecnico VALUES
+(1, 1, 'Notebook travando ao iniciar.', '2024-07-01', 'Aberto'),
+(2, 4, 'Problemas com áudio no headset.', '2024-07-02', 'Em andamento');
+
+
+INSERT INTO avaliacoes VALUES
+(1, 2, 1, 5, 'Excelente notebook, muito rápido.'),
+(2, 3, 2, 4, 'Mouse muito bom, mas poderia ser maior.'),
+(3, 5, 5, 3, 'Headset bom, mas o microfone é fraco.');
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 -- Populando a tabela produtos
