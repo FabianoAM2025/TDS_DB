@@ -1,0 +1,225 @@
+CREATE DATABASE hotel_2;
+
+use hotel_2;
+
+CREATE TABLE quartos (
+    ID INT AUTO_INCREMENT PRIMARY KEY,
+    NUMERO VARCHAR(255) NOT NULL,
+    CAPACIDADE INT,
+    VISTA_MAR BOOLEAN,
+    DIARIA DECIMAL(10,2) NOT NULL
+    
+);
+
+CREATE TABLE CLIENTES (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nome VARCHAR(255) NOT NULL,
+    email VARCHAR(255),
+    telefone VARCHAR(20),
+    TABELA VARCHAR(255)
+);
+
+CREATE TABLE RESERVAS (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    id_CLIENTE INT,
+    id_QUARTO INT,
+    data_ENTRADA DATE NOT NULL,
+    data_SAIDA DATE NOT NULL,
+    FOREIGN KEY (id_quarto) REFERENCES quartos(id),
+    FOREIGN KEY (id_CLIENTE) REFERENCES CLIENTES(id)
+);
+
+
+
+--CLIENTES
+
+INSERT INTO CLIENTES(nome, email, telefone) VALUES ('MIGUEL', 'miguel@teste.com', '(46)92520-3616');
+INSERT INTO CLIENTES(nome, email, telefone) VALUES ('ALICE', 'alic@teste.com', '(46)93582-3775');
+INSERT INTO CLIENTES(nome, email, telefone) VALUES ('DAVI', 'mdavi@teste.com', '(46)92232-1677');
+INSERT INTO CLIENTES(nome, email, telefone) VALUES ('JULIA', 'julia@teste.com', '(46)93712-5526');
+INSERT INTO CLIENTES(nome, email, telefone) VALUES ('BRUNA', 'bruna@teste.com', '(46)92515-0737');
+
+
+
+-- QUARTOS
+
+INSERT INTO QUARTOS (NUMERO, CAPACIDADE, VISTA_MAR, diaria) VALUES
+('QUARTO_1', 1, false, 150.00 ),
+('QUARTO_2', 5, true, 750.00 ),
+('QUARTO_3', 3, true, 450.00 ),
+('QUARTO_4', 1, false, 150.00 ),
+('QUARTO_5', 2, false, 300.00 );
+
+--RESERVAS
+
+
+INSERT INTO reservas (id_cliente, id_quarto, data_entrada, data_saida) VALUES (3, 1, '2023-05-01', '2023-05-02');
+INSERT INTO reservas (id_cliente, id_quarto, data_entrada, data_saida) VALUES (5, 2, '2023-05-06', '2023-05-07');
+INSERT INTO reservas (id_cliente, id_quarto, data_entrada, data_saida) VALUES (2, 3, '2023-04-14', '2023-04-25');
+INSERT INTO reservas (id_cliente, id_quarto, data_entrada, data_saida) VALUES (1, 4, '2023-01-01', '2023-01-05');
+INSERT INTO reservas (id_cliente, id_quarto, data_entrada, data_saida) VALUES (3, 5, '2023-02-20', '2023-02-24');
+
+--------------------------------------------
+Questão 3
+
+--A-- 
+
+select
+ 	VISTA_MAR,
+	NUMERO
+from 
+	quartos
+WHERE
+	VISTA_MAR = true; 
+------------------------------------------
+
+--B--
+
+select
+ 	NOME,
+	EMAIL
+from 
+	CLIENTES;
+-----------------------------------------
+--C--
+
+select
+	CAPACIDADE,
+	NUMERO 		
+from 
+	quartos
+WHERE
+	CAPACIDADE = 2;
+--------------------------------------------
+--D--
+
+SELECT
+	NOME
+FROM
+	CLIENTES
+WHERE
+	NOME like "B%";
+---------------------------------------------------
+--E--
+
+SELECT	
+     DATA_ENTRADA 
+FROM
+     RESERVAS
+WHERE
+     DATA_ENTRADA BETWEEN "2023-05-01" AND "2023-05-31";
+
+
+--------------------------------------------
+questão 4
+
+--A--
+ 
+SELECT 
+    COUNT(NUMERO)
+    
+FROM 
+    quartos;
+---------------------------------------
+--B--
+
+select
+	MAX(CAPACIDADE)
+FROM
+	quartos;
+
+--------------------------------------------
+--C--
+
+select
+	MIN(CAPACIDADE)
+FROM
+	quartos;
+
+---------------------------------------------
+--D--media de capacidade dos quartos
+
+SELECT
+AVG (capacidade)
+FROM
+	quartos;
+
+
+-------------------------------------------
+--E--
+
+select
+ 	VISTA_MAR,
+	COUNT(NUMERO)
+from 
+	quartos
+WHERE
+	VISTA_MAR = true;
+----------------------------------------------------------------------
+Questão 5
+
+
+--A--  select numero from quartos ORDER BY numero ASC;
+
+
+
+
+ --B-- select numero from quartos ORDER BY numero DESC;
+
+
+--------------------------------------------------------------------
+QUESTAO 6
+
+
+
+--A--     ALTER TABLE RESERVAS ADD COLUMN CUPOM VARCHAR(5);
+
+--B-- 	  INSERT INTO RESERVAS (ID, CUPOM) VALUES
+(1, 'LGTSP'),
+(2, 'XGTSP'),
+(3, 'GTSQL');
+
+
+Questao 7
+
+SELECT * FROM RESERVAS
+JOIN clientes on reservas.ID_cliente =clientes.id;
+
+QUESTAO 8
+
+SELECT * FROM RESERVAS
+JOIN quartos on reservas.ID_quarto =quartos.id;
+
+
+
+
+QUAETAO 9
+
+delete from reservas where id in (4,3);
+
+questao 10
+
+DROP TABLE RESERVAS;
+DROP TABLE clientes;
+DROP TABLE quartos;
+DROPE database hotel;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
