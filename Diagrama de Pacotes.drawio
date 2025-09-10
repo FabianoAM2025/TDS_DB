@@ -1,0 +1,84 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:140.0) Gecko/20100101 Firefox/140.0" version="28.2.0">
+  <diagram name="Página-1" id="JTCnFu_GSiAf1vfXkW5V">
+    <mxGraphModel dx="700" dy="490" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="39ut7mN1jGlLOAhWrBHH-0" />
+        <mxCell id="39ut7mN1jGlLOAhWrBHH-1" parent="39ut7mN1jGlLOAhWrBHH-0" />
+        <mxCell id="xk9P_E4J8_gODwq2VdK4-0" value="Login" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="39ut7mN1jGlLOAhWrBHH-1">
+          <mxGeometry x="40" y="380" width="180" height="300" as="geometry" />
+        </mxCell>
+        <mxCell id="xk9P_E4J8_gODwq2VdK4-1" value="Interface de Login" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="xk9P_E4J8_gODwq2VdK4-0">
+          <mxGeometry x="20" y="60" width="130" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="xk9P_E4J8_gODwq2VdK4-2" value="Lógica de Login" style="swimlane;whiteSpace=wrap;html=1;startSize=23;" vertex="1" parent="xk9P_E4J8_gODwq2VdK4-0">
+          <mxGeometry x="20" y="180" width="130" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="xk9P_E4J8_gODwq2VdK4-3" value="Base de dados" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="39ut7mN1jGlLOAhWrBHH-1">
+          <mxGeometry x="80" y="800" width="300" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="xk9P_E4J8_gODwq2VdK4-4" value="Relatórios" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="39ut7mN1jGlLOAhWrBHH-1">
+          <mxGeometry x="234" y="380" width="180" height="300" as="geometry" />
+        </mxCell>
+        <mxCell id="xk9P_E4J8_gODwq2VdK4-5" value="Interface de Relatórios" style="swimlane;whiteSpace=wrap;html=1;startSize=30;" vertex="1" parent="xk9P_E4J8_gODwq2VdK4-4">
+          <mxGeometry x="20" y="60" width="130" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="xk9P_E4J8_gODwq2VdK4-21" value="Lógica de Relatórios" style="swimlane;whiteSpace=wrap;html=1;startSize=30;" vertex="1" parent="xk9P_E4J8_gODwq2VdK4-4">
+          <mxGeometry x="20" y="180" width="130" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="xk9P_E4J8_gODwq2VdK4-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="39ut7mN1jGlLOAhWrBHH-1" source="xk9P_E4J8_gODwq2VdK4-7">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="380" y="840" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="520" y="840" />
+              <mxPoint x="520" y="840" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="xk9P_E4J8_gODwq2VdK4-7" value="Reembolsos" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="39ut7mN1jGlLOAhWrBHH-1">
+          <mxGeometry x="430" y="380" width="180" height="380" as="geometry" />
+        </mxCell>
+        <mxCell id="xk9P_E4J8_gODwq2VdK4-8" value="Interface de Reembolsos" style="swimlane;whiteSpace=wrap;html=1;startSize=30;" vertex="1" parent="xk9P_E4J8_gODwq2VdK4-7">
+          <mxGeometry x="20" y="60" width="130" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="xk9P_E4J8_gODwq2VdK4-9" value="Lógica de Reembolsos" style="swimlane;whiteSpace=wrap;html=1;startSize=30;" vertex="1" parent="xk9P_E4J8_gODwq2VdK4-7">
+          <mxGeometry x="20" y="170" width="130" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="xk9P_E4J8_gODwq2VdK4-10" value="Lógica de Interação com o Banco" style="swimlane;whiteSpace=wrap;html=1;startSize=40;" vertex="1" parent="xk9P_E4J8_gODwq2VdK4-7">
+          <mxGeometry x="20" y="280" width="130" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="xk9P_E4J8_gODwq2VdK4-11" value="Diagrama de Pacotes" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="39ut7mN1jGlLOAhWrBHH-1">
+          <mxGeometry x="140" y="110" width="520" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="xk9P_E4J8_gODwq2VdK4-23" value="Apresenta a organização das classes do&amp;nbsp; sistema empacotes ,compondo a suaarquitetura" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="xk9P_E4J8_gODwq2VdK4-11">
+          <mxGeometry x="15" y="30" width="490" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="xk9P_E4J8_gODwq2VdK4-20" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.75;entryDx=0;entryDy=0;" edge="1" parent="39ut7mN1jGlLOAhWrBHH-1" source="xk9P_E4J8_gODwq2VdK4-12" target="xk9P_E4J8_gODwq2VdK4-3">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="480" y="880" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="720" y="883" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="xk9P_E4J8_gODwq2VdK4-12" value="Contribuiçoes" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="39ut7mN1jGlLOAhWrBHH-1">
+          <mxGeometry x="630" y="380" width="180" height="380" as="geometry" />
+        </mxCell>
+        <mxCell id="xk9P_E4J8_gODwq2VdK4-13" value="Interface de Contribuições" style="swimlane;whiteSpace=wrap;html=1;startSize=40;" vertex="1" parent="xk9P_E4J8_gODwq2VdK4-12">
+          <mxGeometry x="20" y="60" width="130" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="xk9P_E4J8_gODwq2VdK4-14" value="Lógica de Contribuições" style="swimlane;whiteSpace=wrap;html=1;startSize=30;" vertex="1" parent="xk9P_E4J8_gODwq2VdK4-12">
+          <mxGeometry x="20" y="170" width="130" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="xk9P_E4J8_gODwq2VdK4-22" value="Lógica de Interação com o Banco" style="swimlane;whiteSpace=wrap;html=1;startSize=40;" vertex="1" parent="xk9P_E4J8_gODwq2VdK4-12">
+          <mxGeometry x="20" y="280" width="130" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="xk9P_E4J8_gODwq2VdK4-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.167;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="39ut7mN1jGlLOAhWrBHH-1" source="xk9P_E4J8_gODwq2VdK4-0" target="xk9P_E4J8_gODwq2VdK4-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="xk9P_E4J8_gODwq2VdK4-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.813;entryY=0.009;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="39ut7mN1jGlLOAhWrBHH-1" source="xk9P_E4J8_gODwq2VdK4-4" target="xk9P_E4J8_gODwq2VdK4-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
