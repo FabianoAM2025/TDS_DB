@@ -1,82 +1,62 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:140.0) Gecko/20100101 Firefox/140.0" version="28.2.0">
   <diagram name="Página-1" id="JTCnFu_GSiAf1vfXkW5V">
-    <mxGraphModel dx="700" dy="490" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="2262" dy="1153" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
       <root>
         <mxCell id="39ut7mN1jGlLOAhWrBHH-0" />
         <mxCell id="39ut7mN1jGlLOAhWrBHH-1" parent="39ut7mN1jGlLOAhWrBHH-0" />
-        <mxCell id="xk9P_E4J8_gODwq2VdK4-0" value="Login" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="39ut7mN1jGlLOAhWrBHH-1">
-          <mxGeometry x="40" y="380" width="180" height="300" as="geometry" />
+        <mxCell id="exkS2bw_sJTjhcmAiH0h-1" value="&lt;font style=&quot;font-size: 24px;&quot;&gt;CT-AUT-140:Validar login no Tinkercad&lt;/font&gt;" style="swimlane;whiteSpace=wrap;html=1;startSize=60;" vertex="1" parent="39ut7mN1jGlLOAhWrBHH-1">
+          <mxGeometry y="10" width="1160" height="820" as="geometry" />
         </mxCell>
-        <mxCell id="xk9P_E4J8_gODwq2VdK4-1" value="Interface de Login" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="xk9P_E4J8_gODwq2VdK4-0">
-          <mxGeometry x="20" y="60" width="130" height="90" as="geometry" />
+        <mxCell id="exkS2bw_sJTjhcmAiH0h-2" value="&lt;font style=&quot;font-size: 24px;&quot;&gt;Objetivo do teste&lt;/font&gt;" style="swimlane;whiteSpace=wrap;html=1;startSize=40;" vertex="1" parent="exkS2bw_sJTjhcmAiH0h-1">
+          <mxGeometry y="110" width="1150" height="200" as="geometry" />
         </mxCell>
-        <mxCell id="xk9P_E4J8_gODwq2VdK4-2" value="Lógica de Login" style="swimlane;whiteSpace=wrap;html=1;startSize=23;" vertex="1" parent="xk9P_E4J8_gODwq2VdK4-0">
-          <mxGeometry x="20" y="180" width="130" height="90" as="geometry" />
+        <mxCell id="exkS2bw_sJTjhcmAiH0h-10" value="&lt;font style=&quot;font-size: 24px;&quot;&gt;Ações do passo&lt;/font&gt;" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=60;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="exkS2bw_sJTjhcmAiH0h-1">
+          <mxGeometry x="20" y="490" width="540" height="260" as="geometry" />
         </mxCell>
-        <mxCell id="xk9P_E4J8_gODwq2VdK4-3" value="Base de dados" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="39ut7mN1jGlLOAhWrBHH-1">
-          <mxGeometry x="80" y="800" width="300" height="110" as="geometry" />
+        <mxCell id="exkS2bw_sJTjhcmAiH0h-11" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;Item 1 -Acessar a pagina doTINKERCAD&lt;/font&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="exkS2bw_sJTjhcmAiH0h-10">
+          <mxGeometry y="60" width="540" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="xk9P_E4J8_gODwq2VdK4-4" value="Relatórios" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="39ut7mN1jGlLOAhWrBHH-1">
-          <mxGeometry x="234" y="380" width="180" height="300" as="geometry" />
+        <mxCell id="exkS2bw_sJTjhcmAiH0h-12" value="&lt;div&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;Item 2- preencher os campos com dados válidos:&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font size=&quot;3&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;ºNOME&lt;/span&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font size=&quot;3&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;ºEMAIL&lt;/span&gt;&lt;/span&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font size=&quot;3&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;     ºSENHA&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font size=&quot;3&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/font&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="exkS2bw_sJTjhcmAiH0h-10">
+          <mxGeometry y="90" width="540" height="110" as="geometry" />
         </mxCell>
-        <mxCell id="xk9P_E4J8_gODwq2VdK4-5" value="Interface de Relatórios" style="swimlane;whiteSpace=wrap;html=1;startSize=30;" vertex="1" parent="xk9P_E4J8_gODwq2VdK4-4">
-          <mxGeometry x="20" y="60" width="130" height="90" as="geometry" />
+        <mxCell id="exkS2bw_sJTjhcmAiH0h-13" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;Item 3&lt;/font&gt;- &lt;font style=&quot;font-size: 18px;&quot;&gt;Clicar em conectar.&lt;/font&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="exkS2bw_sJTjhcmAiH0h-10">
+          <mxGeometry y="200" width="540" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="xk9P_E4J8_gODwq2VdK4-21" value="Lógica de Relatórios" style="swimlane;whiteSpace=wrap;html=1;startSize=30;" vertex="1" parent="xk9P_E4J8_gODwq2VdK4-4">
-          <mxGeometry x="20" y="180" width="130" height="90" as="geometry" />
+        <mxCell id="exkS2bw_sJTjhcmAiH0h-14" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;Item 4&lt;/font&gt;-&lt;font style=&quot;font-size: 18px;&quot;&gt;Verificar se o logim do usuário foi conectado corretamente&lt;/font&gt;." style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="exkS2bw_sJTjhcmAiH0h-10">
+          <mxGeometry y="230" width="540" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="xk9P_E4J8_gODwq2VdK4-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="39ut7mN1jGlLOAhWrBHH-1" source="xk9P_E4J8_gODwq2VdK4-7">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="380" y="840" as="targetPoint" />
-            <Array as="points">
-              <mxPoint x="520" y="840" />
-              <mxPoint x="520" y="840" />
-            </Array>
-          </mxGeometry>
+        <mxCell id="exkS2bw_sJTjhcmAiH0h-15" value="&lt;font style=&quot;font-size: 24px;&quot;&gt;Resultadoesperado&lt;/font&gt;" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=60;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="exkS2bw_sJTjhcmAiH0h-1">
+          <mxGeometry x="570" y="490" width="580" height="170" as="geometry" />
         </mxCell>
-        <mxCell id="xk9P_E4J8_gODwq2VdK4-7" value="Reembolsos" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="39ut7mN1jGlLOAhWrBHH-1">
-          <mxGeometry x="430" y="380" width="180" height="380" as="geometry" />
+        <mxCell id="exkS2bw_sJTjhcmAiH0h-16" value="&lt;div&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;Item 1-Sistema exibe a pagina do TINKERCAD na pagina principal.&lt;/font&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="exkS2bw_sJTjhcmAiH0h-15">
+          <mxGeometry y="60" width="580" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="xk9P_E4J8_gODwq2VdK4-8" value="Interface de Reembolsos" style="swimlane;whiteSpace=wrap;html=1;startSize=30;" vertex="1" parent="xk9P_E4J8_gODwq2VdK4-7">
-          <mxGeometry x="20" y="60" width="130" height="90" as="geometry" />
+        <mxCell id="exkS2bw_sJTjhcmAiH0h-17" value="&lt;div&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;Item 2-Após o login, exibe a menssagem de logim efetuado com sucesso.&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="exkS2bw_sJTjhcmAiH0h-15">
+          <mxGeometry y="90" width="580" height="50" as="geometry" />
         </mxCell>
-        <mxCell id="xk9P_E4J8_gODwq2VdK4-9" value="Lógica de Reembolsos" style="swimlane;whiteSpace=wrap;html=1;startSize=30;" vertex="1" parent="xk9P_E4J8_gODwq2VdK4-7">
-          <mxGeometry x="20" y="170" width="130" height="90" as="geometry" />
+        <mxCell id="exkS2bw_sJTjhcmAiH0h-18" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;Item 3-O registro do logim é salvono banco de dados.&lt;/font&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="exkS2bw_sJTjhcmAiH0h-15">
+          <mxGeometry y="140" width="580" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="xk9P_E4J8_gODwq2VdK4-10" value="Lógica de Interação com o Banco" style="swimlane;whiteSpace=wrap;html=1;startSize=40;" vertex="1" parent="xk9P_E4J8_gODwq2VdK4-7">
-          <mxGeometry x="20" y="280" width="130" height="90" as="geometry" />
+        <mxCell id="exkS2bw_sJTjhcmAiH0h-19" value="&lt;font style=&quot;font-size: 36px;&quot;&gt;X&lt;/font&gt;" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=light-dark(#a20025, #dc0e37);fontColor=#ffffff;strokeColor=#6F0000;" vertex="1" parent="exkS2bw_sJTjhcmAiH0h-1">
+          <mxGeometry x="650" y="680" width="120" height="120" as="geometry" />
         </mxCell>
-        <mxCell id="xk9P_E4J8_gODwq2VdK4-11" value="Diagrama de Pacotes" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="39ut7mN1jGlLOAhWrBHH-1">
-          <mxGeometry x="140" y="110" width="520" height="100" as="geometry" />
+        <mxCell id="exkS2bw_sJTjhcmAiH0h-20" value="&lt;font style=&quot;font-size: 36px;&quot;&gt;OK&lt;/font&gt;" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=light-dark(#a20025, #00ff00);fontColor=#ffffff;strokeColor=#6F0000;" vertex="1" parent="exkS2bw_sJTjhcmAiH0h-1">
+          <mxGeometry x="940" y="680" width="120" height="120" as="geometry" />
         </mxCell>
-        <mxCell id="xk9P_E4J8_gODwq2VdK4-23" value="Apresenta a organização das classes do&amp;nbsp; sistema empacotes ,compondo a suaarquitetura" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="xk9P_E4J8_gODwq2VdK4-11">
-          <mxGeometry x="15" y="30" width="490" height="60" as="geometry" />
+        <mxCell id="exkS2bw_sJTjhcmAiH0h-3" value="&lt;font style=&quot;font-size: 24px;&quot;&gt;Verificar se realiza&amp;nbsp; o login usando email e senha no sait do TINKERCAD.&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="39ut7mN1jGlLOAhWrBHH-1">
+          <mxGeometry x="30" y="180" width="1100" height="120" as="geometry" />
         </mxCell>
-        <mxCell id="xk9P_E4J8_gODwq2VdK4-20" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.75;entryDx=0;entryDy=0;" edge="1" parent="39ut7mN1jGlLOAhWrBHH-1" source="xk9P_E4J8_gODwq2VdK4-12" target="xk9P_E4J8_gODwq2VdK4-3">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="480" y="880" as="targetPoint" />
-            <Array as="points">
-              <mxPoint x="720" y="883" />
-            </Array>
-          </mxGeometry>
+        <mxCell id="exkS2bw_sJTjhcmAiH0h-6" value="&lt;font style=&quot;font-size: 24px;&quot;&gt;Pré condições&lt;/font&gt;" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=40;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="39ut7mN1jGlLOAhWrBHH-1">
+          <mxGeometry x="20" y="330" width="1130" height="170" as="geometry" />
         </mxCell>
-        <mxCell id="xk9P_E4J8_gODwq2VdK4-12" value="Contribuiçoes" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="39ut7mN1jGlLOAhWrBHH-1">
-          <mxGeometry x="630" y="380" width="180" height="380" as="geometry" />
+        <mxCell id="exkS2bw_sJTjhcmAiH0h-7" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;Item -1 Usuário cadastrado é autenticado na pagina do TINKERCAD.&lt;/font&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="exkS2bw_sJTjhcmAiH0h-6">
+          <mxGeometry y="40" width="1130" height="50" as="geometry" />
         </mxCell>
-        <mxCell id="xk9P_E4J8_gODwq2VdK4-13" value="Interface de Contribuições" style="swimlane;whiteSpace=wrap;html=1;startSize=40;" vertex="1" parent="xk9P_E4J8_gODwq2VdK4-12">
-          <mxGeometry x="20" y="60" width="130" height="90" as="geometry" />
+        <mxCell id="exkS2bw_sJTjhcmAiH0h-8" value="&lt;div&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;Item- 2 A senha cadastrada é autenticada na pagina do TINKERCAD.&lt;/font&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="exkS2bw_sJTjhcmAiH0h-6">
+          <mxGeometry y="90" width="1130" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="xk9P_E4J8_gODwq2VdK4-14" value="Lógica de Contribuições" style="swimlane;whiteSpace=wrap;html=1;startSize=30;" vertex="1" parent="xk9P_E4J8_gODwq2VdK4-12">
-          <mxGeometry x="20" y="170" width="130" height="90" as="geometry" />
-        </mxCell>
-        <mxCell id="xk9P_E4J8_gODwq2VdK4-22" value="Lógica de Interação com o Banco" style="swimlane;whiteSpace=wrap;html=1;startSize=40;" vertex="1" parent="xk9P_E4J8_gODwq2VdK4-12">
-          <mxGeometry x="20" y="280" width="130" height="90" as="geometry" />
-        </mxCell>
-        <mxCell id="xk9P_E4J8_gODwq2VdK4-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.167;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="39ut7mN1jGlLOAhWrBHH-1" source="xk9P_E4J8_gODwq2VdK4-0" target="xk9P_E4J8_gODwq2VdK4-3">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="xk9P_E4J8_gODwq2VdK4-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.813;entryY=0.009;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="39ut7mN1jGlLOAhWrBHH-1" source="xk9P_E4J8_gODwq2VdK4-4" target="xk9P_E4J8_gODwq2VdK4-3">
-          <mxGeometry relative="1" as="geometry" />
+        <mxCell id="exkS2bw_sJTjhcmAiH0h-9" value="&lt;div&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;Item -3 O email cadastrado é autenticado na pagina do TINKERCAD.&lt;/font&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="exkS2bw_sJTjhcmAiH0h-6">
+          <mxGeometry y="120" width="1130" height="50" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
